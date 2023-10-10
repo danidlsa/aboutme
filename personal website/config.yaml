@@ -1,0 +1,381 @@
+baseURL: "https://danidlsa.github.io/"
+languageCode: "en-us"
+title: "Daniela de los Santos"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 6
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: Publications 
+      name: Publications 
+      title: Publications by theme
+      url: /publications
+      weight: 1
+    - identifier: cv
+      name: CV
+      title: CV
+      url: "https://drive.google.com/file/d/1gNswkWbyFDPoeu2f_MSGYo0BRTFqWaw8/view?usp=sharing"
+      weight: 2
+
+    #Dropdown menu
+ #   - identifier: dropdown
+#       title: Example dropdown menu
+#       name: Dropdown
+#       weight: 3
+#     - identifier: dropdown1
+#       title: example dropdown1
+#       name: example1
+#       url: /#
+#       parent: dropdown
+#       weight: 1
+ #    - identifier: dropdown2
+  #     title: example dropdown 2
+   #    name: example 2
+    #   url: /#
+     #  parent: dropdown
+      # weight: 2
+
+params:
+  #title: "Hugo Profile"
+  #description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+ #   brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey there!👋 My name is"
+    title: "Daniela de los Santos"
+    subtitle: "I'm a social data scientist."
+    content: "Passionate about building data-driven tools that can be used for crafting effective public policies and tackling social and gender inequalities."
+    image: /images/AvatarMaker.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "CV"
+      url: "https://drive.google.com/file/d/1gNswkWbyFDPoeu2f_MSGYo0BRTFqWaw8/view?usp=sharing"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/danidlsa
+        - icon: fab fa-twitter
+          url: https://twitter.com/danidlsa
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/danidlsa/
+        - icon: fab fa-google
+          url: https://scholar.google.com.uy/citations?user=5WcqVgwAAAAJ&hl=en
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/me.png"
+    content: |-
+      I hold an MSc in Data Science from the Barcelona School of Economics and a BSc in Sociology from the Catholic University of Uruguay. My expertise spans data-driven social research and public policy analysis, machine and deep learning modeling, data processing and visualization, geospatial analysis, as well as scientific dissemination and teaching. You can check some of my publications [here](/publications).
+      
+      
+    skills:
+      enable: true
+      title: "These are some of the programming languages and technologies I'm currently using:"
+      items:
+        - "Python"
+        - "R"
+        - "SQL"
+        - "AWS"
+        - "H2o.ai"
+        - "PowerBI / Tableau"
+        - "Stata"
+        - "ArcGIS/QGIS"
+        - "Shiny"
+        
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Programme Associate Officer - Inclusive Growth and Social Protection"
+        company: "UNDP"
+        companyUrl: "https://www.undp.org/latin-america"
+        date: "2020 - 2022"
+        featuredLink:
+          enable: true
+          name: "Explore the Care Georeferencing Tool"
+          url: "https://bit.ly/undp_georeferencing_care"
+        info:
+          enable: false
+        content: "As a part of the Gender Cluster in the United Nations Development Programme (LAC), I was responsible for designing and implementing big data-based tools to support governments in the design, implementation, monitoring and evaluation of inclusive care and social protection systems. A good example of this is the Care Georeferencing Tool (click the button!), which helps build territory-level diagnoses of care supply and demand, as well as spot accessibility barriers for vulnerable population."
+
+      - job: "Senior Researcher"
+        company: "CIEDUR"
+        companyUrl: "https://ciedur.org.uy/site/"
+        date: "2016 - 2021"
+        featuredLink:
+          enable: true
+          name: "Gender & Dev Publications"
+          url: "https://ciedur.org.uy/site/publicaciones/"
+        info:
+          enable: false
+          content:
+        content: "As a part of the Gender and Development Department, I conducted research on gender issues, economic and social development, women’s economic autonomy, public policy, labor markets and social inequality, through quantitative and qualitative methodologies. Explore some of our publications in the link above."
+
+      - job: "Lecturer/Research Assistant"
+        company: "UCU"
+        companyUrl: "https://www.ucu.edu.uy/"
+        date: "2018 - 2021"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          name: "Gendered Mobility book chapter"
+          url: "https://www.emerald.com/insight/content/doi/10.1108/S2044-994120200000012006/full/html"
+        content: "During 2020-2021 I was the lecturer in charge of the Sociology undergrad course 'Family, Gender and Generations' in the Catholic University of Uruguay (UCU). Before that, I worked as a RA in Urban Studies and Gender and Mobility projects. Check my highlighted publication in the link."
+
+      - job: "Coordinator - Data and Macrodata"
+        company: "UBA"
+        companyUrl: "https://www.sociales.uba.ar/"
+        date: "2021"
+        info: 
+          enable: false
+        featuredLink:
+          enable: true
+          name: "More about poli-sci research groups"
+          url: "https://cienciapolitica.sociales.uba.ar/home/comunidad/actividades-extracurriculares/gicp__2023/"
+        content: "I worked as Data and Macrodata coordinator in a Political Science research group in the University of Buenos Aires. The group studied the role of government information in guaranteeing access to women’s rights. I led a group of students that focused on improving methodologies to gather data on gender identity."
+          
+
+      - job: "Other research experience"
+        date: "2013 - "
+        info:
+          enable: true
+          content: "Just some highlighted experience - See my resume for the complete list." 
+        content: |-
+          - University of the Republic (Uruguay) -  Institute of Political Science (Research Assistant)
+          - International Labour Office - Consultant
+          - MercadoLibre - Policy and rules rep.
+  
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "MSc in Data Science for Decision Making"
+        school:
+          name: "Barcelona School of Economics"
+          url: "https://bse.eu/"
+        date: "2022 - 2023"
+        GPA: "8.8 out of 10.0"
+        content: |-
+          Thesis: ‘Forecasting GlobalRefugee Flows: A Machine Learning Approach using Non-conventional Data’. 
+          Grade: 10 (A+).
+        featuredLink:
+          enable: true
+          name: "Master's Thesis"
+          url: "https://github.com/danidlsa/refugees"
+      - title: "BSc in Sociology"
+        school:
+          name: "Catholic University of Uruguay"
+          url: "https://www.ucu.edu.uy/"
+        date: "2010 - 2014"
+        GPA: "5.5 out of 6.0"
+        content: |-
+          Thesis (2020): ‘The childhood neighborhood as a center of gravity: Residential mobility of young people from Montevideo during their transition to adulthood.’
+          Grade: A+.
+        featuredLink:
+          enable: true
+          name: "Undergrad thesis"
+          url: "https://catalogo.ucu.edu.uy/cgi-bin/koha/opac-detail.pl?biblionumber=97608"
+# 
+#   # Achievements
+#   achievements:
+#     enable: true
+#     # title: "Custom Name"
+#     items:
+#       - title: Care Georeferencing Tool featured in Digital X Catalogue
+#         content: The Care Georeferencing Tool was selected as a top digital solution for UNDP country offices. 
+#         url: https://digitalx.undp.org/care-georeferencing-tool_1.html
+#         image: /images/digitalx.png
+#       - title: Awarded Research Grant Juan Pablo Terra
+#         content: I was one of the winners of the Juan Pablo Terra Research Projects Contest 2016-2017, under the topic 'Transition to Adulthood'. The resulting papers were compiled in a book.
+#         url: https://institutojuanpabloterra.org.uy/document/infancia-adolescencia-y-familias/
+#         image: /images/jpt.png
+#       - title: Awarded Research Grant for Young Researchers ECLAC-MIDES
+#         content: My project under the topic 'Homelessness' was one of four selected for the ECLAC-Ministry of Development Research Projects Contest 2017.
+#         url: https://www.cepal.org/fr/node/43855
+#         image: /images/cepal.png
+#       - title: Scholarship of Academic Excellence
+#         content: 100% funding for Bachelor Degree (Catholic University of Uruguay)
+#         image: /images/ucu.png
+        
+
+  # projects
+  projects:
+    enable: true
+    title: "Featured Projects"
+    items:
+      - title: Forecasting Refugee Flows
+        content: A Machine Learning Approach using Non-conventional Data such as Google Trends and GDELT, in collaboration with UNHCR.
+        image: /images/publications/refugees.png
+        featured:
+          name: View project
+          link: https://github.com/danidlsa/refugees/blob/main/document/Master_Thesis.pdf
+        badges:
+          - "decision trees"
+          - "gradient boosting"
+          - "google trends"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/refugees
+
+      - title: Care georeferencing tool
+        content: Big data-based tool that generates diagnoses of supply, demand and accessibility deficiencies in care policy.
+        image: /images/publications/care2.png
+        featured:
+          name: View report
+          link: https://www.undp.org/latin-america/publications/mapping-care-innovative-tools-georeferencing-care-supply-and-demand-latin-america-and-caribbean
+        badges:
+          - "Google Places"
+          - "Overpass"
+          - "OSRM"
+          - "webscraping"
+          - "crowdmapping"
+        links:
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=hvQtx95w8Ns&ab_channel=AmericalatinageneraRSCLACPNUD
+
+      - title: Detecting Informal Settlements using Satellite Imagery
+        content: Exercise to map informal settlements across the globe using VHR satellite imagery and Convolutional Neural Networks.
+        image: /images/publications/settlement.png
+        featured:
+          name: View paper
+          link: https://drive.google.com/file/d/1qtXUqI5BElXC-HJI-x4Ur-m3puKcLk7v/view?usp=drive_link
+        badges:
+          - "CNN"
+          - "VHR satellite imagery"
+          - "pytorch"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/informal_settlements/tree/main
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to email me, star me on [Github](https://github.com/danidlsa) or contact me via [LinkedIn](https://www.linkedin.com/in/danidlsa/)
+    email: daniela.de@bse.eu
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
