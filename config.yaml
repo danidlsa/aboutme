@@ -1,4 +1,4 @@
-baseURL: "https://danidlsa.github.io/"
+baseURL: "https://danidlsa.netlify.app/"
 languageCode: "en-us"
 title: "Daniela de los Santos"
 theme: "hugo-profile"
@@ -15,7 +15,7 @@ outputs:
 Paginate: 6
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
+googleAnalytics: danidlsa
 
 markup:
   goldmark:
@@ -26,7 +26,7 @@ Menus:
   main:
     - identifier: Publications 
       name: Publications 
-      title: Publications by theme
+      title: Publications
       url: /publications
       weight: 1
     - identifier: cv
@@ -57,7 +57,7 @@ params:
   #title: "Hugo Profile"
   #description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/Mesa de trabajo 100.svg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -74,7 +74,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -246,7 +246,7 @@ params:
         date: "2022 - 2023"
         GPA: "8.8 out of 10.0"
         content: |-
-          Thesis: ‘Forecasting GlobalRefugee Flows: A Machine Learning Approach using Non-conventional Data’. 
+          Thesis: ‘Forecasting Global Refugee Flows: A Machine Learning Approach using Non-conventional Data’. 
           Grade: 10 (A+).
         featuredLink:
           enable: true
@@ -336,6 +336,16 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/danidlsa/informal_settlements/tree/main
+            
+      - title: Browse publications by theme.
+        content: Here you'll find refereed papers, book chapters, reports, working papers and others.
+        image: /images/publications/handbook 2.png
+        featured:
+          name: Browse
+          link: /publications
+            
+         
+            
 
   #Contact
   contact:
@@ -350,7 +360,14 @@ params:
     #   emailCaption: "Enter your email address"
     #   messageCaption: "Enter your message here"
 
-
+  # footer:
+  #   recentPosts:
+  #     path: "publications"
+  #     count: 5
+  #     title: "Browse publications by theme:"
+  #     enable: true
+  #     disableFeaturedImage: false
+      
 
   # List pages like blogs and posts
   listPages:

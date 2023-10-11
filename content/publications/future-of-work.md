@@ -4,7 +4,7 @@ date: "2023-10-06"
 description: "Future of work"
 draft: false
 github_link: 
-image: /images/publications/telework.png
+image: /images/publications/telework 2.png
 tags:
 - future of work
 - gender
@@ -19,7 +19,7 @@ toc: null
 
 In the framework of my labor market research, I have published a few papers regarding the 'future of work' dilemma: new ways of organizing labor (such as telework, electronic commerce and gig economy), the dynamics of automatization and the labor market, and the gender impacts of these phenomena. You can also explore dissemination activities and press appearences about this subject in my [resume](https://drive.google.com/file/d/1gNswkWbyFDPoeu2f_MSGYo0BRTFqWaw8/view?usp=sharing).
 
--**De los Santos, Daniela & Fynn, Inés** (2023). ‘From Safety Net to Safety Trap: Informality and Telework During the Coronavirus Pandemic in Latin America’. American Behavioral Scientist (ABS). Read it [here](https://sare.upf.edu/login?qurl=https%3A%2F%2Fjournals.sagepub.com%2Fdoi%2F10.1177%2F00027642231155365).
+-**De los Santos, Daniela & Fynn, Inés** (2023). ‘From Safety Net to Safety Trap: Informality and Telework During the Coronavirus Pandemic in Latin America’. American Behavioral Scientist (ABS). Read it [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9974375/).
 
 -**De los Santos, Daniela & Fernández, Mayra** (2021). 'Comercio electrónico y género en Uruguay: transformaciones recientes y la mirada hacia la post-pandemia.'
 CIEDUR - Gender and Commerce Network. Read the report [here](https://ciedur.org.uy/site/wp-content/uploads/2021/10/Estudio-de-caso-Uruguay-A4-FINAL.pdf).

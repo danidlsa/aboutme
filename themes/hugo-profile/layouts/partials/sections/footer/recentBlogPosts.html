@@ -2,7 +2,7 @@
 {{ $currentNumOfrecentPosts := len (where .Site.RegularPages "Type" $recentPostsPath) }} 
 {{ if and (gt $currentNumOfrecentPosts 0) (.Site.Params.footer.recentPosts.enable | default false) }} 
 <div class="container py-3" id="recent-posts">
-    {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 3 }}
+    {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 5 }}
     {{ $recentPosts := where .Site.RegularPages "Section" $recentPostsPath | first $recentPostsCount }}
     <div class="h3 text-center text-secondary py-3">
         {{ .Site.Params.footer.recentPosts.title | default "Recent Posts" }}
@@ -20,10 +20,10 @@
                 {{ end }}
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="{{ .RelPermalink }}" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
+                        <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 50 }}</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>{{ .Summary | truncate 300}}</p>
+                        <p>{{ .Summary | truncate 0}}</p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
