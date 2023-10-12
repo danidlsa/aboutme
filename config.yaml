@@ -173,17 +173,17 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Programme Associate Officer - Inclusive Growth and Social Protection"
+      - job: "Inclusive Growth and Gender Specialist"
         company: "UNDP"
         companyUrl: "https://www.undp.org/latin-america"
-        date: "2020 - 2022"
+        date: "2020 - current"
         featuredLink:
           enable: true
           name: "Explore the Care Georeferencing Tool"
           url: "https://bit.ly/undp_georeferencing_care"
         info:
           enable: false
-        content: "As a part of the Gender Cluster in the United Nations Development Programme (LAC), I was responsible for designing and implementing big data-based tools to support governments in the design, implementation, monitoring and evaluation of inclusive care and social protection systems. A good example of this is the Care Georeferencing Tool (click the button!), which helps build territory-level diagnoses of care supply and demand, as well as spot accessibility barriers for vulnerable population."
+        content: "As a part of the Gender Cluster in the United Nations Development Programme (LAC), I am responsible for (among other things) designing and implementing big data-based tools to support governments in the design, implementation, monitoring and evaluation of inclusive care and social protection policies. A good example of this is the Care Georeferencing Tool, which helps build territory-level diagnoses of care supply and demand, as well as spot accessibility barriers for vulnerable population."
 
       - job: "Senior Researcher"
         company: "CIEDUR"
