@@ -337,6 +337,38 @@ params:
           - icon: fab fa-github
             url: https://github.com/danidlsa/informal_settlements/tree/main
             
+      - title: Optimal Bike Station Placement
+        content: Network analysis to optimize bike-sharing systems decision-making process.
+        image: /images/publications/bikes.png
+        featured:
+          name: View paper
+          link: https://drive.google.com/file/d/1qtkXxkFI0FyhUHE_oyORtUFXjI8ndnWN/view
+        badges:
+          - "graph network"
+          - "pytrans"
+          - "igraph"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/bike-stations
+            
+      - title: Using NLP models to classify people's stances on Twitter
+        content: Exercise to classify stances in tweets about abortion, atheism, feminism and climate.
+        image: /images/publications/twitter.png
+        featured:
+          name: View project
+          link: https://github.com/danidlsa/nlp-final-tweeteval
+        badges:
+          - "BERT"
+          - "LSTM"
+          - "RNN"
+          - "tensorflow"
+          - "keras"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/nlp-final-tweeteval
+            
+                
+            
       - title: Browse publications by theme.
         content: Here you'll find refereed papers, book chapters, reports, working papers and others.
         image: /images/publications/handbook 2.png
